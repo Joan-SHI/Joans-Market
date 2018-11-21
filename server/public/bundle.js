@@ -24537,7 +24537,8 @@ var App = function (_React$Component) {
 
       //set the state to loading true
       this.setState({
-        loading: true
+        loading: true,
+        errorMessage: null
       });
       (0, _api.getMarketRent)(suburbName).then(function (marketRent) {
         //set the state back to loading false 

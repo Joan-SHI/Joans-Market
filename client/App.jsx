@@ -28,7 +28,8 @@ class App extends React.Component {
   updateMarketRent(suburbName) {
     //set the state to loading true
     this.setState({
-      loading: true
+      loading: true,
+      errorMessage: null
     })
     getMarketRent(suburbName)
       .then(marketRent => {
@@ -67,7 +68,7 @@ class App extends React.Component {
          this.setState({
           loading: false
         })
-        
+
         this.setState({ errorMessage: err.message })
 
         //show error
