@@ -41,7 +41,10 @@ class App extends React.Component {
         //console.log(marketRent.items.length);
         if(marketRent.errorMessage) {
           console.log("error message: ", marketRent.errorMessage)
-          this.setState({ errorMessage: marketRent.errorMessage })
+          this.setState({ errorMessage: marketRent.errorMessage, 
+            rentPrice: "___"
+
+          })
         } else {
 
           if (marketRent.items.length > 0) {
@@ -94,7 +97,7 @@ class App extends React.Component {
         <Nav />
         <Header />
         <Table />
-        <h2>The Market Rent Rate Is {this.state.rentPrice}</h2>
+        <h2>The Market Rent Is {this.state.rentPrice}</h2>
         {!this.state.loading && <MarketRent MarketRent={this.updateMarketRent} />}
         {this.state.loading && <SpinnersComponent />}
         {this.state.errorMessage && this.state.errorMessage}

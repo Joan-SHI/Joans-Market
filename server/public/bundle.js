@@ -24549,7 +24549,10 @@ var App = function (_React$Component) {
         //console.log(marketRent.items.length);
         if (marketRent.errorMessage) {
           console.log("error message: ", marketRent.errorMessage);
-          _this2.setState({ errorMessage: marketRent.errorMessage });
+          _this2.setState({ errorMessage: marketRent.errorMessage,
+            rentPrice: "___"
+
+          });
         } else {
 
           if (marketRent.items.length > 0) {
@@ -24603,7 +24606,7 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           'h2',
           null,
-          'The Market Rent Rate Is ',
+          'The Market Rent Is ',
           this.state.rentPrice
         ),
         !this.state.loading && _react2.default.createElement(_MarketRent2.default, { MarketRent: this.updateMarketRent }),
@@ -25134,7 +25137,7 @@ var SpinnersComponent = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'sweet-loading' },
-                _react2.default.createElement(_reactSpinners.ClimbingBoxLoader, {
+                _react2.default.createElement(_reactSpinners.PacmanLoader, {
                     className: override,
                     sizeUnit: "px",
                     size: 15,
