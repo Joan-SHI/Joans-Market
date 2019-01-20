@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from 'react-emotion';
-import { ClimbingBoxLoader } from 'react-spinners';
+import { PacmanLoader } from 'react-spinners';
 
 
 const override = css`
@@ -20,7 +20,7 @@ class SpinnersComponent extends React.Component {
     render() {
         return (
             <div className='sweet-loading'>
-                <ClimbingBoxLoader
+                <PacmanLoader
                     className={override}
                     sizeUnit={"px"}
                     size={15}

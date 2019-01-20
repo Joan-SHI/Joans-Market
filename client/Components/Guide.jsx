@@ -9,8 +9,8 @@ const Guide = () => {
       <li>Income rate of change</li>
       <li>Population growth rate</li>
     </ul>
-    
     </div>
+
   )
 }
 

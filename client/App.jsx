@@ -17,9 +17,9 @@ class App extends React.Component {
       showMarket: false,
       rentPrice: "___",
       loading: false,
-    color: '#000000',
-    className: ''
-     }
+      color: '#000000',
+      className: ''
+    }
 
     this.handleClick = this.handleClick.bind(this)
     this.updateMarketRent = this.updateMarketRent.bind(this)
@@ -28,49 +28,61 @@ class App extends React.Component {
   updateMarketRent(suburbName) {
     //set the state to loading true
     this.setState({
-      loading : true
+      loading: true,
+      errorMessage: null
     })
     getMarketRent(suburbName)
       .then(marketRent => {
         //set the state back to loading false 
         this.setState({
-          loading : false
+          loading: false
         })
+          
+        //console.log(marketRent.items.length);
+        if(marketRent.errorMessage) {
+          console.log("error message: ", marketRent.errorMessage)
+          this.setState({ errorMessage: marketRent.errorMessage, 
+            rentPrice: "___"
 
-        console.log(marketRent.items.length);
-
-        if (marketRent.items.length > 0) {
-          //array
-          this.setState({
-            rentPrice: marketRent.items[0].med
           })
         } else {
-          //object
-          this.setState({
-            rentPrice: marketRent.items.med
-          })
 
+          if (marketRent.items.length > 0) {
+            //array
+            this.setState({
+              rentPrice: marketRent.items[0].med
+            })
+          } else {
+            //object
+            this.setState({
+              rentPrice: marketRent.items.med
+            })
+
+          }
+          // console.log(marketRent.items)
+
+          // this.setState({
+          //   rentPrice: marketRent.items.med
+          // })
         }
-        // console.log(marketRent.items)
-
-        // this.setState({
-        //   rentPrice: marketRent.items.med
-        // })
       })
+      .catch(err => {
+         //set the state back to loading false 
+         this.setState({
+          loading: false
+        })
+
+        this.setState({ errorMessage: err.message })
+
+        //show error
+        console.log('error is', err.message)
+      })
+      
+
   }
 
   componentDidMount() {
-    // getMarketRent()
-    //   .then(marketRent => {
-    //     console.log('marketRent is', marketRent)
-
-    //     // TODO this.setState
-    //     this.setState({
-    //       error: err,
-    //       marketRent: {}
-
-    //     })
-    //   })
+    
   }
 
   handleClick() {
@@ -85,9 +97,10 @@ class App extends React.Component {
         <Nav />
         <Header />
         <Table />
-        <h2>The Market Rent Rate Is {this.state.rentPrice}</h2>
+        <h2>The Market Rent Is {this.state.rentPrice}</h2>
         {!this.state.loading && <MarketRent MarketRent={this.updateMarketRent} />}
         {this.state.loading && <SpinnersComponent />}
+        {this.state.errorMessage && this.state.errorMessage}
         <Guide />
         <Marketinfo click={this.handleClick} />
         {this.state.showMarket &&
