@@ -24965,7 +24965,7 @@ var Nav = function Nav() {
           { className: "nav-item active" },
           _react2.default.createElement(
             "a",
-            { className: "nav-link", href: "https://www.google.co.nz" },
+            { className: "nav-link", href: "https://github.com/Joan-SHI" },
             "Home ",
             _react2.default.createElement(
               "span",
@@ -24979,7 +24979,7 @@ var Nav = function Nav() {
           { className: "nav-item" },
           _react2.default.createElement(
             "a",
-            { className: "nav-link", href: "#market" },
+            { className: "nav-link", href: "https://www.interest.co.nz/borrowing" },
             "Market Info"
           )
         ),
@@ -24988,7 +24988,7 @@ var Nav = function Nav() {
           { className: "nav-item" },
           _react2.default.createElement(
             "a",
-            { className: "nav-link", href: "#" },
+            { className: "nav-link", href: "qiongnashi@gmail.com" },
             "Contact"
           )
         )
