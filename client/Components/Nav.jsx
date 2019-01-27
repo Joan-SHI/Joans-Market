@@ -10,13 +10,13 @@ const Nav = () =>{
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="https://www.google.co.nz">Home <span class="sr-only">(current)</span></a>
+              <a className="nav-link" href="https://github.com/Joan-SHI">Home <span class="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#market">Market Info</a>
+              <a className="nav-link" href="https://www.interest.co.nz/borrowing">Market Info</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="qiongnashi@gmail.com">Contact</a>
             </li>
           </ul>
           <span className="navbar-text" class="btn btn-warning">
