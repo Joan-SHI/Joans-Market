@@ -24961,26 +24961,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Nav = function Nav() {
   return _react2.default.createElement(
     "nav",
-    { className: "navbar navbar-expand-lg navbar-light bg-light" },
+    { className: "navbar navbar-expand-sm navbar-dark bg-warning" },
     _react2.default.createElement(
-      "a",
-      { className: "navbar-brand", href: "https://www.interest.co.nz/borrowing" },
-      "Current_Bank_Rate"
-    ),
-    _react2.default.createElement(
-      "a",
-      { className: "navbar-brand", href: "https://www.enz.org/house-rents-wellington.html" },
-      "Current_Market_Rent"
-    ),
-    _react2.default.createElement(
-      "a",
-      { className: "navbar-brand", href: "https://github.com/Joan-SHI" },
-      "Home"
-    ),
-    _react2.default.createElement(
-      "a",
-      { className: "navbar-brand", href: "https://www.linkedin.com/in/joan-shi-87a152179/" },
-      "Contact"
+      "ul",
+      { className: "navbar-nav" },
+      _react2.default.createElement(
+        "li",
+        { className: "nav-item active" },
+        _react2.default.createElement(
+          "a",
+          { className: "nav-link", href: "https://www.interest.co.nz/borrowing" },
+          "Current_Bank_Rate"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        { className: "nav-item active" },
+        _react2.default.createElement(
+          "a",
+          { className: "nav-link", href: "https://www.enz.org/house-rents-wellington.html" },
+          "Current_Market_Rent"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        { className: "nav-item active" },
+        _react2.default.createElement(
+          "a",
+          { className: "nav-link", href: "https://github.com/Joan-SHI" },
+          "Home"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        { className: "nav-item active" },
+        _react2.default.createElement(
+          "a",
+          { className: "nav-link", href: "https://www.linkedin.com/in/joan-shi-87a152179/" },
+          "Contact"
+        )
+      )
     ),
     _react2.default.createElement(
       "div",
