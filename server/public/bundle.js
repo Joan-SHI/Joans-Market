@@ -24645,7 +24645,7 @@ var Header = function Header() {
   return _react2.default.createElement(
     "h1",
     { "class": " text-center" },
-    "Rate To Rent"
+    "Rate To Rent - Wellington"
   );
 };
 
@@ -24803,7 +24803,7 @@ var Guide = function Guide() {
     'div',
     null,
     _react2.default.createElement(
-      'h1',
+      'h2',
       null,
       'Guide'
     ),
@@ -24813,22 +24813,12 @@ var Guide = function Guide() {
       _react2.default.createElement(
         'li',
         null,
-        'Bank Rate'
+        'The data we use here is filtered to be the medium rent for 3-bedroom house in Wellington.'
       ),
       _react2.default.createElement(
         'li',
         null,
-        'The rate of house price change'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Income rate of change'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Population growth rate'
+        'You may get error message when you type your suburb name and it is not same as the name this API uses.For example: \'Ngaio\' doesn\'t work but \'Ngaio South\' works. '
       )
     )
   );
@@ -24858,7 +24848,7 @@ var Marketinfo = function Marketinfo(props) {
     "div",
     { id: "market" },
     _react2.default.createElement(
-      "h1",
+      "h2",
       null,
       "Market Info"
     ),
@@ -24899,19 +24889,48 @@ var Market = function Market() {
     'div',
     null,
     _react2.default.createElement(
-      'h1',
+      'h3',
       null,
-      'Market Rent'
+      '-- The factors which affect market rent:'
+    ),
+    _react2.default.createElement(
+      'ul',
+      null,
+      _react2.default.createElement(
+        'li',
+        null,
+        'Bank Rate'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'The rate of house price change'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'Income rate of change'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'Population growth rate'
+      )
+    ),
+    _react2.default.createElement(
+      'h3',
+      null,
+      '-- Market Rent'
     ),
     _react2.default.createElement(
       'p',
       null,
-      'If bank rate increases, charge tennants more'
+      'If bank rate increases, charge tennants more.'
     ),
     _react2.default.createElement(
       'p',
       null,
-      'If bank rate decreases, you\'re already profiting'
+      'If bank rate decreases, you\'re already profiting.'
     )
   );
 };
@@ -24941,62 +24960,31 @@ var Nav = function Nav() {
     { className: "navbar navbar-expand-lg navbar-light bg-light" },
     _react2.default.createElement(
       "a",
-      { className: "navbar-brand", href: "#" },
-      "Bank Rate"
+      { className: "navbar-brand", href: "https://www.interest.co.nz/borrowing" },
+      "Current_Bank_Rate"
     ),
     _react2.default.createElement(
       "a",
-      { className: "navbar-brand", href: "#" },
-      "Market Rent"
+      { className: "navbar-brand", href: "https://www.enz.org/house-rents-wellington.html" },
+      "Current_Market_Rent"
     ),
     _react2.default.createElement(
-      "button",
-      { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarText", "aria-controls": "navbarText", "aria-expanded": "false", "aria-label": "Toggle navigation" },
-      _react2.default.createElement("span", { className: "navbar-toggler-icon" })
+      "a",
+      { className: "navbar-brand", href: "https://github.com/Joan-SHI" },
+      "Home"
+    ),
+    _react2.default.createElement(
+      "a",
+      { className: "navbar-brand", href: "https://www.linkedin.com/in/joan-shi-87a152179/" },
+      "Contact"
     ),
     _react2.default.createElement(
       "div",
       { className: "collapse navbar-collapse", id: "navbarText" },
       _react2.default.createElement(
-        "ul",
-        { className: "navbar-nav mr-auto" },
-        _react2.default.createElement(
-          "li",
-          { className: "nav-item active" },
-          _react2.default.createElement(
-            "a",
-            { className: "nav-link", href: "https://github.com/Joan-SHI" },
-            "Home ",
-            _react2.default.createElement(
-              "span",
-              { "class": "sr-only" },
-              "(current)"
-            )
-          )
-        ),
-        _react2.default.createElement(
-          "li",
-          { className: "nav-item" },
-          _react2.default.createElement(
-            "a",
-            { className: "nav-link", href: "https://www.interest.co.nz/borrowing" },
-            "Market Info"
-          )
-        ),
-        _react2.default.createElement(
-          "li",
-          { className: "nav-item" },
-          _react2.default.createElement(
-            "a",
-            { className: "nav-link", href: "qiongnashi@gmail.com" },
-            "Contact"
-          )
-        )
-      ),
-      _react2.default.createElement(
         "span",
         { className: "navbar-text", "class": "btn btn-warning" },
-        "Joan's Market App          "
+        "Joan's Market App"
       )
     )
   );
