@@ -24889,7 +24889,7 @@ var Market = function Market() {
     'div',
     null,
     _react2.default.createElement(
-      'h3',
+      'h4',
       null,
       '-- The factors which affect market rent:'
     ),
@@ -24918,19 +24918,23 @@ var Market = function Market() {
       )
     ),
     _react2.default.createElement(
-      'h3',
+      'h4',
       null,
       '-- Market Rent'
     ),
     _react2.default.createElement(
-      'p',
+      'ul',
       null,
-      'If bank rate increases, charge tennants more.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'If bank rate decreases, you\'re already profiting.'
+      _react2.default.createElement(
+        'li',
+        null,
+        'If bank rate increases, charge tennants more.'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'If bank rate decreases, you\'re already profiting.'
+      )
     )
   );
 };
@@ -24983,7 +24987,7 @@ var Nav = function Nav() {
       { className: "collapse navbar-collapse", id: "navbarText" },
       _react2.default.createElement(
         "span",
-        { className: "navbar-text", "class": "btn btn-warning" },
+        { className: "navbar-text-right", "class": "btn btn-warning" },
         "Joan's Market App"
       )
     )

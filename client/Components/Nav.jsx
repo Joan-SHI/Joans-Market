@@ -21,7 +21,7 @@ const Nav = () =>{
               <a className="nav-link" href="qiongnashi@gmail.com">Contact</a>
             </li>
     </ul>*/}
-          <span className="navbar-text" class="btn btn-warning">Joan's Market App</span>
+          <span className="navbar-text-right" class="btn btn-warning">Joan's Market App</span>
         </div>
       </nav>
     )
