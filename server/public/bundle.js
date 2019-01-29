@@ -25003,12 +25003,16 @@ var Nav = function Nav() {
       )
     ),
     _react2.default.createElement(
-      "div",
-      { className: "collapse navbar-collapse", id: "navbarText" },
+      "ul",
+      { className: "nav navbar-nav navbar-right" },
       _react2.default.createElement(
-        "span",
-        { className: "navbar-text-right", "class": "btn btn-warning" },
-        "Joan's Market App"
+        "li",
+        null,
+        _react2.default.createElement(
+          "span",
+          { className: "navbar-text", "class": "btn btn-warning" },
+          "Joan's Market App"
+        )
       )
     )
   );

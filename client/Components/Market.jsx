@@ -9,11 +9,6 @@ const Market = () => {
       <li>Income rate of change</li>
       <li>Population growth rate</li>
     </ul>
-    <h4>-- Market Rent</h4>
-    <ul>
-    <li>If bank rate increases, charge tennants more.</li>
-    <li>If bank rate decreases, you're already profiting.</li>
-    </ul>
     </div>
   )
 }
