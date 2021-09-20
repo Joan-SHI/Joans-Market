@@ -18,3 +18,4 @@ Once I get my API approvals from MBIE and ASB, apply them in database.
 Strectch Goal:
 Read some articles about the factors which affect Market-rent. To see whehter I could introduce more types of API into database. 
 
+#Joan revisits this app today (20th September 2021), after 2 years not looking after it haha. 
