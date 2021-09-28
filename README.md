@@ -9,6 +9,8 @@ Use
  - React
  - API
  in my personal project so I have better understanding about them. This project will show Wellingtian landlords and tenants how the bank rates influences the market rent so they can make decisions more rationally and have a happy ending:) 
+ -------------------------------------------------------------------------------------------------------------
+<a href="https://market-rent.herokuapp.com/" target="_blank"><img src="assets/images/projects/Joan's_Market_App1.png" alt="Developer Theme" width="750" /></a>
 
 To do:
 
